@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="DCE Full Bug" package="dcefullbug" version="1.0.0" company="" />
+	<app main="Main" file="dcefullbug" path="bin" />
+	<window background="#000000" fps="60" />
+	<window width="640" height="480" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	<set name="html5-backend" value="openfl-html5-dom" />
+	<haxelib name="openfl" />
+	<haxeflag name="-dce full" if="html5" />
+</project>
